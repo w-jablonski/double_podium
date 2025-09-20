@@ -1,6 +1,6 @@
 # double_podium WIP
 
-Mouse-friendly symetrical carved ortholinear keyboard layout implemented in QMK
+Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
@@ -9,9 +9,9 @@ And additionally, navigation, common shortcuts and others are also available for
 
 No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower anyway.
 
-# Concepts
+## Concepts
 
-<img width="700" height="571" alt="keyboard-layout(6)" src="https://github.com/user-attachments/assets/c7d2efb4-2efd-4640-aa46-60b69ec369b6" />
+<img width="700" alt="keyboard-layout(6)" src="https://github.com/user-attachments/assets/c7d2efb4-2efd-4640-aa46-60b69ec369b6" />
 
 Two sets of arrow keys in the familiar "podium" or "WASD" shape. Press modifier under pinkie to enable. I believe this is more natural than thumb + podium (of the same hand). Read below about the complications.
 
@@ -36,13 +36,13 @@ Additionally, for the right hand only, holding any other modifier also/already c
 
 <br>
 
-### WIP
+## WIP
 
 WIP
 
 <br>
 
-### AAA
+## AAA
 
 AAA
 
