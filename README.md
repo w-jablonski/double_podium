@@ -5,7 +5,7 @@ Mouse-friendly symetrical carved ortholinear keyboard layout implemented in QMK
 ## Goals
 
 Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way ivolving both hands. 
-Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left hand. 
+And additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left hand. 
 
 No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower anyway.
 
@@ -53,7 +53,7 @@ AAA
 
 <!--  
 
-# Polish+English Keyboard Character Layouts <br><br>Polsko-angielskie układy znaków na klawiaturze
+# Polish+English Keyboard Character Layouts <br><br>AAA
 
 Conservative Symmetrical Mouse-friendly Carved Ortho Layout With Polish+English Characters Layout And Two Sets of Arrow Keys And No Mod-Taps
 
@@ -62,12 +62,8 @@ Conservative Symmetrical Mouse-friendly Carved Ortho Layout With Polish+English 
 
 <p align="center"> </p>
 
-
 However, with the UU now being at index I imagine this comes across as the two vowels are now at index finger, the hand feels more mobile.
 
-Some features 
-
-Some circumstances that shaped up this layout: 
 opposes
 is aligned to the keyboard
 
