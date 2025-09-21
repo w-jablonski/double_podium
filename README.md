@@ -11,7 +11,7 @@ No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold
 
 ## Concepts
 
-<img width="700" alt="keyboard-layout(6)" src="https://github.com/user-attachments/assets/c7d2efb4-2efd-4640-aa46-60b69ec369b6" />
+<img width="700" alt="keyboard-layout(4)" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
 Two sets of arrow keys in the familiar "podium" or "WASD" shape. Press modifier under pinkie to enable. I believe this is more natural than thumb + podium (of the same hand). Read below about the complications.
 
@@ -38,11 +38,22 @@ Additionally, for the right hand only, holding any other modifier also/already c
 
 ## WIP
 
+
+
+
+<img width="700" alt="keyboard-layout(5)" src="https://github.com/user-attachments/assets/419ceb5f-0916-4d58-b69d-45f0e36e4a12" />
+
+
 WIP
 
 <br>
 
 ## AAA
+
+<img width="700" height="571" alt="keyboard-layout(7)" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
+
+
+
 
 AAA
 
