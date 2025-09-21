@@ -5,7 +5,7 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 ## Goals
 
 Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way ivolving both hands. 
-And additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left hand. 
+And additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half. 
 
 No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower anyway.
 
@@ -13,10 +13,17 @@ No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold
 
 <img width="700" alt="keyboard-layout(4)" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
-Two sets of arrow keys in the familiar "podium" or "WASD" shape. Press modifier under pinkie to enable. I believe this is more natural than thumb + podium (of the same hand). Read below about the complications.
+Two sets of arrow keys in the familiar "podium" or "WASD" shape. Press modifier under pinkie to enable. I believe this is more natural than thumb + podium (of the same hand). 
+This, of course, is just an idea and oftentimes the two sets will vary in funcion and complement each other. But their placement on the home row and familiar shape are meant to 
+provide convenience for actions such as navigation, scrolling, moving text around etc. Modifiers under pinkies (they're in fact CTRL and ALT) should aid in that thanks to 
+easy reach from the arrow sets. Read below about the inevitable complications of mixing a modifier and a layer activator into one key.
 
 
 <!-- 
+
+LATER: it allows Ctrl+XCV without finger-breaking
+
+symmetrical
 
 Combos are embraced where there is no better way to provide some functionality (quite often). 
 
