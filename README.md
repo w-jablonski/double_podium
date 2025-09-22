@@ -4,12 +4,13 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
-* Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way involving the right hand, or both. 
+* Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way elsewhere. 
 Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
-In general, using both hands to balance the effort is necessary and recommended if using keyboard heavily — but there are times when using mouse is unavoidable and
-moving the hand back and forth is particularly annoying. This design aims to provide for both scenarios in a viable way.
+In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times that mouse must be used and
+switching the hand between the two can be a nuisance. The design aims to provide for both scenarios in a viable way.
 
 * No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
+
 * Provide AltGr as a first-class citizen to type accented characters in Polish.
 
 ## Concepts
@@ -29,12 +30,15 @@ depending on which hand's turn it is or just general convenience (like opposite 
 
 Many combos are implemented using Tap-Dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard — you hold it down 
 until the alternative character is produced. Other combos simply repeat the character — these are used for symbols you might actually want to repeat, like drawing a line of dashes etc.
-Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). Put together, this makes the maximum of four characters shown per a combo on the renders below.
+Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). Put together, this makes the maximum of four characters shown per a combo on the below renders.
 
-These renders are a simplified representation and only show some combos. Included are features which are less likely to change.
+Only some combos are shown; their features may also be missing. Included are features which are less likely to change.
 
-<img width="405" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
-<img width="405" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+<img width="415" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
+<img width="415" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+
+<br><br><br><br>
+
 <img width="410" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
@@ -49,10 +53,40 @@ Modifiers on held combos. These also have their mini-layers with just the Tab ke
 
 <img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
 
+<br>
+
+## Features
+
+### Numpad layer
+
+Only major features are shown. Double-tapping the activator locks the layer. The Dot produces Comma if held. Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
+
+<img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
+
+<br>
+
+### Function layer
+
+It is activated by double-holding the AltGr key. As the AltGr has no meaning with any other modifier (except Shift), this can also be used to activate this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
+
+<img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
 
+
+
+### Other features
+
+AltGr with some keys produces frequently used symbols.
+
+Double-tapping left Shift activates Caps Word, double-tapping right Shift activates Caps Lock. Tapping them once disactivates these.
+
+
+
+
+<br><br><br><br><br><br><br><br>
 
 <!-- 
+These are a simplified representation and only show some combos. Included are features which are less likely to change.
 
 At least to me, holding a layer with a pinkie, especially for longer time, feels more natural (read: healthier) than with a thumb.<br>
 
@@ -93,34 +127,10 @@ Additionally, for the right hand only, holding any other modifier also/already c
 
 -->
 
-<br>
-
-## WIP
 
 
 
 
-
-
-WIP
-
-<img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
-
-<br>
-
-## AAA
-
-<img width="700" height="571" alt="keyboard-layout(7)" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
-
-
-
-
-AAA
-
-
-
-
-<br><br><br><br><br><br><br><br>
 
 <!--  
 
