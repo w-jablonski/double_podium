@@ -7,7 +7,7 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 * Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way elsewhere. 
 Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
 In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times that mouse must be used and
-switching the hand between the two can be a nuisance. The design aims to provide for both scenarios in a viable way.
+switching the hand between the two can be a nuisance. This design aims to provide for both scenarios in a viable way.
 
 * No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
 
@@ -21,35 +21,32 @@ switching the hand between the two can be a nuisance. The design aims to provide
 
 Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row when in one-hand operation. 
 And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
-As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that.
+As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that, besides some other logic.
+I use slightly different (and lower) keycaps on these keys so they can be easily found.
 
 ### Combos
 
-Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. It feels good: the mind freely chooses the side 
-depending on which hand's turn it is or just general convenience (like opposite to the modifier in use, etc).
+Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. It feels convenient: the mind freely chooses the side 
+depending on which hand's turn it is or just general convenience.
 
 Many combos are implemented using Tap-Dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard — you hold it down 
 until the alternative character is produced. Other combos simply repeat the character — these are used for symbols you might actually want to repeat, like drawing a line of dashes etc.
-Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). Put together, this makes the maximum of four characters shown per a combo on the below renders.
+Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). 
 
-Only some combos are shown; their features may also be missing. Included are features which are less likely to change.
+Only some combos are shown; their features may also be missing.
 
-<img width="415" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
+<img width="415" alt="combos0" src="https://github.com/user-attachments/assets/6ab69933-a40e-4b91-9b14-b5e25f4708ed" />
 <img width="415" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
-
-<br><br><br><br>
-
-<img width="410" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
+<img width="410" alt="combos2" src="https://github.com/user-attachments/assets/6880e836-6376-4488-bf38-abbacb4c0b05" />
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
-
 
 When a NAV layer is on, these combos accompany it:
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
 <br><br>
 
-Modifiers on held combos. These also have their mini-layers with just the Tab key adjacent to the triggering combo. 
+When held, some combos produce modifiers. These also activate their mini-layers with just the Tab key adjacent to the triggering combo. 
 
 <img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
 
@@ -59,7 +56,8 @@ Modifiers on held combos. These also have their mini-layers with just the Tab ke
 
 ### Numpad layer
 
-Only major features are shown. Double-tapping the activator locks the layer. The Dot produces Comma if held. Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
+Only major features are shown. Double-tapping the activator key locks the layer, tapping it once releases it. The Dot produces Comma if held. 
+Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
 
 <img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
@@ -67,25 +65,45 @@ Only major features are shown. Double-tapping the activator locks the layer. The
 
 ### Function layer
 
-It is activated by double-holding the AltGr key. As the AltGr has no meaning with any other modifier (except Shift), this can also be used to activate this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
+It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
 
 <img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
+### General layout
 
+Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text editor I tried.
+
+<img width="700" alt="non-letters" src="https://github.com/user-attachments/assets/30749dfc-4e48-4b97-a4a1-eba5a1695ecc" />
+<!--
+<img width="700" alt="non-letters-AAA" src="https://github.com/user-attachments/assets/508c4c5d-39d5-4250-aa77-7ca9b69c9f70" />
+<img width="700" alt="non-letters-BBB" src="https://github.com/user-attachments/assets/1a76be14-28a9-4265-910c-cef13e32b2d0" />
+-->
 
 
 ### Other features
 
-AltGr with some keys produces frequently used symbols.
+The ```layer_state_set_user()``` function, which gets called anytime a layer changes, is used to handle activation of conditional layers. 
+Some empty key-bound layers are used for this.
+
+AltGr with some keys produces frequently used symbols. Like a symbol layer wrapped around accented characters.
 
 Double-tapping left Shift activates Caps Word, double-tapping right Shift activates Caps Lock. Tapping them once disactivates these.
 
 
 
+##
+
+Graphics on this page were created using the excellent [Keyboard Layout Editor NG](https://editor.keyboard-tools.xyz/)
+
 
 <br><br><br><br><br><br><br><br>
 
 <!-- 
+
+
+
+Put together, this makes the maximum of four characters shown per a combo on the below renders.
+
 These are a simplified representation and only show some combos. Included are features which are less likely to change.
 
 At least to me, holding a layer with a pinkie, especially for longer time, feels more natural (read: healthier) than with a thumb.<br>
@@ -94,8 +112,6 @@ Depending on the layer and modifiers applied the two clusters will optimally hav
 The two pinkie-keys are also serving as modifiers (CTRL and ALT) .
 which inevitably complicates things
 As tlimited room and by principle hand never moves, these
-
-I have slightly different (and lower) keycaps on these pinkie-keys so that the hand can find them without looking.
 
 for the hand than thumb + podium (of the same hand) would be and even in . 
 Read below about the inevitable complications of mixing a modifier and a layer activator into one key.
