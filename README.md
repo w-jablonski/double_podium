@@ -4,24 +4,63 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
-Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way ivolving both hands. 
+Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way involving the right hand, or both. 
 And additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half. 
 
-No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower anyway.
+No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
 
 ## Concepts
 
+### Double podium
+
 <img width="700" alt="keyboard-layout(4)" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
-Two sets of arrow keys in the familiar "podium" or "WASD" shape. Press modifier under pinkie to enable. I believe this is more natural than thumb + podium (of the same hand). 
-This, of course, is just an idea and oftentimes the two sets will vary in funcion and complement each other. But their placement on the home row and familiar shape are meant to 
-provide convenience for actions such as navigation, scrolling, moving text around etc. Modifiers under pinkies (they're in fact CTRL and ALT) should aid in that thanks to 
-easy reach from the arrow sets. Read below about the inevitable complications of mixing a modifier and a layer activator into one key.
+Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row when in one-hand operation. 
+And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
+At least to me, holding a layer with a pinkie, especially for longer time, feels more natural (read: healthier) than with a thumb.<br>
+As the number of keys available for modifiers is limited, the two pinkie-keys also serve as CTRL and ALT — holding Space key in addition achieves that.
+
+### Combos
+
+Combos are used to send symbols, modifiers and others using just the left hand. Many of them are then mirrored on the right side. I find this very convenient: 
+You memorize both sides easily and your mind freely chooses depending on which hand's turn it is or just general convenience (like opposite to the modifier in use).
+
+Many combos are implemented using tap-dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard - you hold it down 
+until the alternative character is produced. Other combos actually simply repeat the character.
+Holding Shift also modifies these (sends any chosen character, not just shift + previous one). 
+
+ 
+
+<img width="450" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
+<img width="450" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+<img width="450" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
+<img width="450" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
+
+<img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
+<img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
+
+
 
 
 <!-- 
+Depending on the layer and modifiers applied the two clusters will optimally have complementary functions when using both hands. 
+The two pinkie-keys are also serving as modifiers (CTRL and ALT) .
+which inevitably complicates things
+As tlimited room and by principle hand never moves, these
+
+I have slightly different (and lower) keycaps on these pinkie-keys so that the hand can find them without looking.
+
+for the hand than thumb + podium (of the same hand) would be and even in . 
+Read below about the inevitable complications of mixing a modifier and a layer activator into one key.
+Modifiers under pinkies (they're in fact CTRL and ALT) . 
 
 LATER: it allows Ctrl+XCV without finger-breaking
+
+designate employing
+
+navigation cluster
+navigation block
+navigation section 
 
 symmetrical
 
@@ -48,10 +87,11 @@ Additionally, for the right hand only, holding any other modifier also/already c
 
 
 
-<img width="700" alt="keyboard-layout(5)" src="https://github.com/user-attachments/assets/419ceb5f-0916-4d58-b69d-45f0e36e4a12" />
 
 
 WIP
+
+<img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
 <br>
 
