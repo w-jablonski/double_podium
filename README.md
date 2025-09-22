@@ -4,10 +4,13 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
-Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way involving the right hand, or both. 
-And additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half. 
+* Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way involving the right hand, or both. 
+Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
+In general, using both hands to balance the effort is necessary and recommended if using keyboard heavily — but there are times when using mouse is unavoidable and moving the hand back and forth is
+particularly annoying. This design aims to provide for both scenarios in a viable way.
 
-No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
+* No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
+* Provide AltGr as a first-class citizen to type accented characters in Polish.
 
 ## Concepts
 
@@ -17,33 +20,32 @@ No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold
 
 Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row when in one-hand operation. 
 And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
-At least to me, holding a layer with a pinkie, especially for longer time, feels more natural (read: healthier) than with a thumb.<br>
-As the number of keys available for modifiers is limited, the two pinkie-keys also serve as CTRL and ALT — holding Space key in addition achieves that.
+As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that.
 
 ### Combos
 
-Combos are used to send symbols, modifiers and others using just the left hand. Many of them are then mirrored on the right side. I find this very convenient: 
-You memorize both sides easily and the mind freely chooses depending on which hand's turn it is or just general convenience (like opposite to the modifier in use).
+Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. It feels good: the mind freely chooses the side 
+depending on which hand's turn it is or just general convenience (like opposite to the modifier in use, etc).
 
-Many combos are implemented using tap-dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard - you hold it down 
-until the alternative character is produced. Other combos actually simply repeat the character. These are used for some symbols you might actually want to repeat, like drawing a line of dashes etc.
-Holding Shift can also modify combos (it sends *any* character, not just the previous one shifted). Accordingly, a maximum of four characters is shown per a combo on the renders below.
+Many combos are implemented using Tap-Dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard — you hold it down 
+until the alternative character is produced. Other combos simply repeat the character — these are used for symbols you might actually want to repeat, like drawing a line of dashes etc.
+Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). Put together, this makes the maximum of four characters shown per a combo on the renders below.
 
-These renders are a simplified representation of some of the combos used. Included are features which are less likely to change.
+These renders are a simplified representation and only show some combos. Included are features which are less likely to change.
 
-<img width="450" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
-<img width="450" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
-<img width="450" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
-<img width="450" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
+<img width="400" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
+<img width="400" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+<img width="420" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
+<img width="420" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
 
 
-When a NAV layer is on, these combos support it:
+When a NAV layer is on, these combos accompany it:
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
 <br><br>
 
-Modifiers on held combos. These also have their respective mini-layers with just the adjacent Tab key. 
+Modifiers on held combos. These also have their mini-layers with just the Tab key adjacent to the triggering combo. 
 
 <img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
 
@@ -51,6 +53,9 @@ Modifiers on held combos. These also have their respective mini-layers with just
 
 
 <!-- 
+
+At least to me, holding a layer with a pinkie, especially for longer time, feels more natural (read: healthier) than with a thumb.<br>
+
 Depending on the layer and modifiers applied the two clusters will optimally have complementary functions when using both hands. 
 The two pinkie-keys are also serving as modifiers (CTRL and ALT) .
 which inevitably complicates things
