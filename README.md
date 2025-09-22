@@ -23,20 +23,28 @@ As the number of keys available for modifiers is limited, the two pinkie-keys al
 ### Combos
 
 Combos are used to send symbols, modifiers and others using just the left hand. Many of them are then mirrored on the right side. I find this very convenient: 
-You memorize both sides easily and your mind freely chooses depending on which hand's turn it is or just general convenience (like opposite to the modifier in use).
+You memorize both sides easily and the mind freely chooses depending on which hand's turn it is or just general convenience (like opposite to the modifier in use).
 
 Many combos are implemented using tap-dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard - you hold it down 
-until the alternative character is produced. Other combos actually simply repeat the character.
-Holding Shift also modifies these (sends any chosen character, not just shift + previous one). 
+until the alternative character is produced. Other combos actually simply repeat the character. These are used for some symbols you might actually want to repeat, like drawing a line of dashes etc.
+Holding Shift can also modify combos (it sends *any* character, not just the previous one shifted). Accordingly, a maximum of four characters is shown per a combo on the renders below.
 
- 
+These renders are a simplified representation of some of the combos used. Included are features which are less likely to change.
 
 <img width="450" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
 <img width="450" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
 <img width="450" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
 <img width="450" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
+<br><br>
+
+
+When a NAV layer is on, these combos support it:
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
+<br><br>
+
+Modifiers on held combos. These also have their respective mini-layers with just the adjacent Tab key. 
+
 <img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
 
 
