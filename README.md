@@ -6,8 +6,8 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 * Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way involving the right hand, or both. 
 Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
-In general, using both hands to balance the effort is necessary and recommended if using keyboard heavily — but there are times when using mouse is unavoidable and moving the hand back and forth is
-particularly annoying. This design aims to provide for both scenarios in a viable way.
+In general, using both hands to balance the effort is necessary and recommended if using keyboard heavily — but there are times when using mouse is unavoidable and
+moving the hand back and forth is particularly annoying. This design aims to provide for both scenarios in a viable way.
 
 * No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
 * Provide AltGr as a first-class citizen to type accented characters in Polish.
@@ -33,10 +33,10 @@ Holding Shift might also modify combos (it sends *any* character, not just the p
 
 These renders are a simplified representation and only show some combos. Included are features which are less likely to change.
 
-<img width="400" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
-<img width="400" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
-<img width="420" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
-<img width="420" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
+<img width="405" alt="combos0" src="https://github.com/user-attachments/assets/4c538cd9-98df-43f7-ad75-7b2c937f2d32" />
+<img width="405" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+<img width="410" alt="combos2" src="https://github.com/user-attachments/assets/7c965f35-1d50-4aca-8b11-3e67d0f0672f" />
+<img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
 
 
