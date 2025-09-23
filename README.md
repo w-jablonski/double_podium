@@ -38,12 +38,13 @@ Only some combos are shown; their features may also be missing.
 <img width="415" alt="combos0" src="https://github.com/user-attachments/assets/6ab69933-a40e-4b91-9b14-b5e25f4708ed" />
 <img width="415" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
 
+<br><br>
 
 <img width="410" alt="combos2" src="https://github.com/user-attachments/assets/6880e836-6376-4488-bf38-abbacb4c0b05" />
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
 
-When a NAV layer is on, these combos accompany it:
+When a NAV layer is on, the below combos accompany it. This means pressing ```Ctrl+(``` outputs ```End```. Press ```Ctrl+Space+(``` to get ```Ctrl+(```.
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
 <br><br>
@@ -56,30 +57,42 @@ When held, some combos produce modifiers. These also activate their mini-layers 
 
 ## Features
 
+### NAV layer
+
+<img width="700" alt="nav" src="https://github.com/user-attachments/assets/0f149942-9b77-4bf9-a0ff-ec92b1470a47" />
+
+Activator keys register Ctrl for the mouse.
+
+<br>
+
 ### Numpad layer
+
+<img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
 Only major features are shown. Double-tapping the activator key locks the layer, tapping it once releases it. The Dot produces Comma if held. 
 Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
-
-<img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
 <br>
 
 ### Function layer
 
-It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
-
 <img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
-### General layout
+It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
 
-Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text editor I tried.
+
+
+### General layout
 
 <img width="700" alt="non-letters" src="https://github.com/user-attachments/assets/30749dfc-4e48-4b97-a4a1-eba5a1695ecc" />
 <!--
 <img width="700" alt="non-letters-AAA" src="https://github.com/user-attachments/assets/508c4c5d-39d5-4250-aa77-7ca9b69c9f70" />
 <img width="700" alt="non-letters-BBB" src="https://github.com/user-attachments/assets/1a76be14-28a9-4265-910c-cef13e32b2d0" />
 -->
+
+Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text editor I tried.<br>Character layout in use can be found [here](https://github.com/w-jablonski/files/blob/main/Polish_English_characters_layout/README.md).
+
+
 
 
 ### Other features
@@ -90,6 +103,8 @@ Some empty key-bound layers are used for this.
 AltGr with some keys produces frequently used symbols. Like a symbol layer wrapped around accented characters.
 
 Double-tapping left Shift activates Caps Word, double-tapping right Shift activates Caps Lock. Tapping them once disactivates these.
+
+
 
 
 
