@@ -4,14 +4,14 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
-* Mouse friendly, i.e. most actions, characters and symbols are under left hand. If needed, they are then also provided in a more convenient way elsewhere. 
+* Mouse friendly, i.e. most actions, characters and symbols are available under left hand. If needed, they are then also provided in a more convenient way elsewhere. 
 Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
 In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times that mouse must be used and
 switching the hand between the two can be a nuisance. This design aims to provide for both scenarios in a viable way.
 
-* No Tap-Hold on regular keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
+* No Tap-Hold on character keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
 
-* Provide AltGr as a first-class citizen to type accented characters in Polish.
+* AltGr as a first-class citizen to type accented characters in Polish.
 
 ## Concepts
 
@@ -22,21 +22,23 @@ switching the hand between the two can be a nuisance. This design aims to provid
 Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row when in one-hand operation. 
 And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
 As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that, besides some other logic.
-I use slightly different (and lower) keycaps on these keys so they can be easily found.
+I use slightly different (lower) keycaps on these two keys so they can be easily found.
 
 ### Combos
 
-Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. It feels convenient: the mind freely chooses the side 
+Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. Using these is a pleasure: the mind freely chooses side 
 depending on which hand's turn it is or just general convenience.
 
 Many combos are implemented using Tap-Dance to achieve tap-or-hold operation. The resultig experience is similar to a smartphone keyboard — you hold it down 
 until the alternative character is produced. Other combos simply repeat the character — these are used for symbols you might actually want to repeat, like drawing a line of dashes etc.
-Holding Shift might also modify combos (it sends *any* character, not just the previous one shifted). 
+Holding Shift also modifies some combos (it sends *any* character, not just the previous one shifted). It can be released early, too (One Shot Mod).
 
 Only some combos are shown; their features may also be missing.
 
 <img width="415" alt="combos0" src="https://github.com/user-attachments/assets/6ab69933-a40e-4b91-9b14-b5e25f4708ed" />
 <img width="415" alt="combos1" src="https://github.com/user-attachments/assets/35f0b280-f895-46d1-9584-c58b381c7a43" />
+
+
 <img width="410" alt="combos2" src="https://github.com/user-attachments/assets/6880e836-6376-4488-bf38-abbacb4c0b05" />
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
