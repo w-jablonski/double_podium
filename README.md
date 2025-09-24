@@ -6,7 +6,7 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 * Mouse friendly, i.e. most actions, characters and symbols are available under left hand. If needed, they are then also provided in a more convenient way elsewhere. 
 Additionally, navigation, common shortcuts and others are also available for right hand-only operation, often by mirroring the left half.<br><br>
-In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times that mouse must be used and
+In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times when mouse must be used and
 switching the hand between the two can be a nuisance. This design aims to provide for both scenarios in a viable way.
 
 * No Tap-Hold on regular character keys as I believe it's not without issues. Tap-Hold is used on combos, though, as these are pressed slower and separately anyway.
@@ -16,18 +16,10 @@ switching the hand between the two can be a nuisance. This design aims to provid
 ## Concept
 <img width="700" alt="keyboard-layout(4)" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
-Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row even in one-hand operation. 
+Putting a layer activator on the lowest pinkie allows a comfortable podium-style navigation cluster at home row even in one-hand operation. 
 And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
 As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that, besides some other logic.
 I use slightly different (lower) keycaps on these two keys so they can be easily found.
-
-This encourages bindings which are derived from position 
-
-<br>
-
-
-
-
 
 # Features
 
@@ -51,7 +43,7 @@ Only some combos are shown; their features may also be missing.
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
 
-When a NAV layer is on, the below combos accompany it. This means that pressing ```Ctrl+(``` outputs ```End```, for example. Press ```Ctrl+Space+(``` to get ```Ctrl+(```.
+When a NAV layer is on, the below combos accompany it. This means that pressing ```Ctrl+(``` outputs ```End```, for example. Press ```Ctrl+Space+(``` instead to send ```Ctrl+(```.
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
 <br><br>
@@ -71,43 +63,41 @@ When held, some combos produce modifiers. These also activate their mini-layers 
 ### NAV layer
 <img width="700" alt="nav" src="https://github.com/user-attachments/assets/0f149942-9b77-4bf9-a0ff-ec92b1470a47" />
 
-Activated by any of the two keys. These also register Ctrl to modify mouse events and any keys outside of this layer. Holding Space key in addition to these *drops* the NAV layer, making the keys act as pure Ctrl.
-I am actually not using the "bottom" Ctrl a lot — it might get replaced by a Space key (see comments in the NAV_ALT section below). 
+Activated by holding any of the two keys. These also register Ctrl to modify mouse events and any keys outside of this layer. Holding Space key in addition to these *drops* the NAV layer, making the keys act as pure Ctrl.
+I am actually not using the right Ctrl a lot — it might get replaced by a Space key. 
 
-The left part features some common shortcuts placed at — or near to — where they are in QWERTY layout. ```Ctrl+Z``` is pressed by stacking the ring finger on top of pinkie. For this to be comfortable the two keycaps differ in height.
+The left part features some common shortcuts placed at — or close to — where they are in the QWERTY layout. ```Ctrl+Z``` is pressed by stacking the ring finger on top of the pinkie. For this to be comfortable the two keycaps differ in height.
 
 The right part is less firmly set. It aims to offer directional scrolling in a text editor — but some editors don't seem to allow horizontal scrolling by a keyboard at all. Comfortable "Undo" and "Redo" are also provided.
 
 ### NAV_ALT layer
 <img width="700" alt="nav_alt" src="https://github.com/user-attachments/assets/eff55695-0dec-4501-b5e9-7fb479f5a9fd" />
 
-Activated by the Alt key. Just as with the NAV layer, holding Space key disactivtes it making the key act as pure Alt. Additionally, pressing any other modifier also disactivtes NAV_ALT.
+Activated by holding the Alt key. Just like with the Ctrl, holding Space makes the key act as pure Alt. Additionally, any other modifier also disactivates NAV_ALT (e.g. holding both pinkie-keys gets us an Alt-ed NAV layer).
 
-The layer currently aims to serve a dual role, which makes it suboptimal. First, it provides basic navigation and common shortcuts under right hand. 
-Second, it serves the left hand the NAV layer, letting left pinkie rest. This second role would be best served activating a NAV layer for *both* hands. 
-This second role would imply activating the *whole* NAV layer, though, which conflicts with the first goal.
-
-Aaa
+The layer currently serves a dual role which makes it suboptimal. First, it provides basic navigation and shortcuts under right hand. 
+Second, it serves the left hand the NAV layer, letting the left pinkie rest. This second role would imply activating the *whole* NAV layer (just like the right Ctrl does), though, which conflicts with the first goal.
 
 ### Numpad layer
 <img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
 Only major features are shown. Double-tapping the activator key locks the layer, tapping it once releases it. The Dot produces Comma if held. 
-Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
+Stating the obvious, the left part is for left hand-only operation and the right part is for more comfortable typing with the free hand.
 
 ### Function layer
 <img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
 It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
+This as well as other conditional layers are managed in the ```layer_state_set_user()``` function that gets called anytime a layer changes.
 
-### General layout
+### Base layer
 <img width="700" alt="non-letters" src="https://github.com/user-attachments/assets/30749dfc-4e48-4b97-a4a1-eba5a1695ecc" />
 <!--
 <img width="700" alt="non-letters-AAA" src="https://github.com/user-attachments/assets/508c4c5d-39d5-4250-aa77-7ca9b69c9f70" />
 <img width="700" alt="non-letters-BBB" src="https://github.com/user-attachments/assets/1a76be14-28a9-4265-910c-cef13e32b2d0" />
 -->
 
-Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text editor I tried.<br>Character layout in use can be found [here](https://github.com/w-jablonski/files/blob/main/Polish_English_characters_layout/README.md).
+```Ctrl+Home``` and ```Ctrl+End``` scroll the view to top/bottom in every browser and text editor I tried.<br>Character layout in use can be found [here](https://github.com/w-jablonski/files/blob/main/Polish_English_characters_layout/README.md).
 
 
 
@@ -116,18 +106,13 @@ Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text e
 
 ## Other features
 
-The ```layer_state_set_user()``` function, which gets called anytime a layer changes, is used to handle activation of conditional layers. 
-Some empty key-bound layers are used for this.
-
 AltGr with some keys produces frequently used symbols. Like a symbol layer wrapped around accented characters.
 
 Double-tapping left Shift activates Caps Word, double-tapping right Shift activates Caps Lock. Tapping them once disactivates these.
 
+## Implementation
 
-
-
-
-##
+I use this design on a 15x5 Idobao ID75 keyboard and have implemented it in QMK. See my [keymap.c](aaa) and other files in the repo.
 
 Graphics on this page were created using the excellent [Keyboard Layout Editor NG](https://editor.keyboard-tools.xyz/)
 
@@ -136,7 +121,9 @@ Graphics on this page were created using the excellent [Keyboard Layout Editor N
 
 <!-- 
 
+left hand in a comprehensive form, and mirrored under right in a basic form.
 
+ (see comments in the NAV_ALT section below)
 
 Put together, this makes the maximum of four characters shown per a combo on the below renders.
 
@@ -155,13 +142,7 @@ Modifiers under pinkies (they're in fact CTRL and ALT) .
 
 LATER: it allows Ctrl+XCV without finger-breaking
 
-designate employing
 
-navigation cluster
-navigation block
-navigation section 
-
-symmetrical
 
 Combos are embraced where there is no better way to provide some functionality (quite often). 
 
