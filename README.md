@@ -9,22 +9,29 @@ Additionally, navigation, common shortcuts and others are also available for rig
 In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — but there are times that mouse must be used and
 switching the hand between the two can be a nuisance. This design aims to provide for both scenarios in a viable way.
 
-* No Tap-Hold on character keys as I believe it's not without issues. I use Tap-Hold on combos, though, as these are pressed slower and separately anyway.
+* No Tap-Hold on regular character keys as I believe it's not without issues. Tap-Hold is used on combos, though, as these are pressed slower and separately anyway.
 
 * AltGr as a first-class citizen to type accented characters in Polish.
 
-## Concepts
-
-### Double podium
-
+## Concept
 <img width="700" alt="keyboard-layout(4)" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
-Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row when in one-hand operation. 
+Putting a layer activator under lowest pinkie allows a comfortable podium-style navigation cluster at home row even in one-hand operation. 
 And when using both hands, the two clusters can have complementary functions dependant on the layer and modifiers.<br>
 As the number of keys available for modifiers is limited, the two pinkie-keys also serve as bare Ctrl and Alt — holding Space key in addition achieves that, besides some other logic.
 I use slightly different (lower) keycaps on these two keys so they can be easily found.
 
-### Combos
+This encourages bindings which are derived from position 
+
+<br>
+
+
+
+
+
+# Features
+
+## Combos
 
 Combos are used to send symbols, modifiers and others using just one hand. Many of them are mirrored on both sides. Using these is a pleasure: the mind freely chooses side 
 depending on which hand's turn it is or just general convenience.
@@ -44,7 +51,7 @@ Only some combos are shown; their features may also be missing.
 <img width="410" alt="combos3" src="https://github.com/user-attachments/assets/43f4a3f2-b35a-4d26-b28a-9a7afc66edd8" />
 <br><br>
 
-When a NAV layer is on, the below combos accompany it. This means pressing ```Ctrl+(``` outputs ```End```. Press ```Ctrl+Space+(``` to get ```Ctrl+(```.
+When a NAV layer is on, the below combos accompany it. This means that pressing ```Ctrl+(``` outputs ```End```, for example. Press ```Ctrl+Space+(``` to get ```Ctrl+(```.
 
 <img width="450" alt="combo_ctrl" src="https://github.com/user-attachments/assets/5d69c984-af37-4185-883c-fc282ec01387" />
 <br><br>
@@ -53,37 +60,47 @@ When held, some combos produce modifiers. These also activate their mini-layers 
 
 <img width="450" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
 
-<br>
 
-## Features
+
+
+
+
+
+## Layers
 
 ### NAV layer
-
 <img width="700" alt="nav" src="https://github.com/user-attachments/assets/0f149942-9b77-4bf9-a0ff-ec92b1470a47" />
 
-Activator keys register Ctrl for the mouse.
+Activated by any of the two keys. These also register Ctrl to modify mouse events and any keys outside of this layer. Holding Space key in addition to these *drops* the NAV layer, making the keys act as pure Ctrl.
+I am actually not using the "bottom" Ctrl a lot — it might get replaced by a Space key (see comments in the NAV_ALT section below). 
 
-<br>
+The left part features some common shortcuts placed at — or near to — where they are in QWERTY layout. ```Ctrl+Z``` is pressed by stacking the ring finger on top of pinkie. For this to be comfortable the two keycaps differ in height.
+
+The right part is less firmly set. It aims to offer directional scrolling in a text editor — but some editors don't seem to allow horizontal scrolling by a keyboard at all. Comfortable "Undo" and "Redo" are also provided.
+
+### NAV_ALT layer
+<img width="700" alt="nav_alt" src="https://github.com/user-attachments/assets/eff55695-0dec-4501-b5e9-7fb479f5a9fd" />
+
+Activated by the Alt key. Just as with the NAV layer, holding Space key disactivtes it making the key act as pure Alt. Additionally, pressing any other modifier also disactivtes NAV_ALT.
+
+The layer currently aims to serve a dual role, which makes it suboptimal. First, it provides basic navigation and common shortcuts under right hand. 
+Second, it serves the left hand the NAV layer, letting left pinkie rest. This second role would be best served activating a NAV layer for *both* hands. 
+This second role would imply activating the *whole* NAV layer, though, which conflicts with the first goal.
+
+Aaa
 
 ### Numpad layer
-
 <img width="700" alt="num" src="https://github.com/user-attachments/assets/3efb2683-fc81-4630-9103-57ca79eacb44" />
 
 Only major features are shown. Double-tapping the activator key locks the layer, tapping it once releases it. The Dot produces Comma if held. 
 Stating the obvious, the left part is for left hand-only operation and the right part is for more convenient two-hands typing.
 
-<br>
-
 ### Function layer
-
 <img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
 It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
 
-
-
 ### General layout
-
 <img width="700" alt="non-letters" src="https://github.com/user-attachments/assets/30749dfc-4e48-4b97-a4a1-eba5a1695ecc" />
 <!--
 <img width="700" alt="non-letters-AAA" src="https://github.com/user-attachments/assets/508c4c5d-39d5-4250-aa77-7ca9b69c9f70" />
@@ -95,7 +112,9 @@ Ctrl+Home and Ctrl+End scroll the view to top/bottom in every browser and text e
 
 
 
-### Other features
+
+
+## Other features
 
 The ```layer_state_set_user()``` function, which gets called anytime a layer changes, is used to handle activation of conditional layers. 
 Some empty key-bound layers are used for this.
