@@ -87,7 +87,7 @@ don't seem to allow horizontal scrolling via keyboard at all. Comfortable "Undo"
 <img width="700" alt="nav_alt" src="https://github.com/user-attachments/assets/eff55695-0dec-4501-b5e9-7fb479f5a9fd" />
 
 Activated by holding the Alt key. Just like with the Ctrl, holding Space makes the key act as plain Alt. 
-Additionally, any other modifier also deactivates NAV_ALT (e.g. holding both pinkie-keys gets us an Alt-ed 
+Additionally, any other modifier also deactivates NAV_ALT (e.g. holding both pinkie-keys results in an Alt-ed 
 NAV layer).
 
 The layer currently serves a dual role which makes it suboptimal. First, it provides basic navigation and 
