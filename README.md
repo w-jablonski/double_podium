@@ -21,7 +21,7 @@ though, as these are pressed slower and separately anyway.
 
 Putting a layer activator on the lowest pinkie allows a comfortable podium-style navigation cluster at home 
 row even in one-hand operation. And when using both hands, the two clusters can have complementary functions 
-dependent on the layer and modifiers.<br>
+dependent on the layer and modifiers.<br><br>
 As the number of keys available for modifiers is limited, the two pinkie-keys also serve as plain Ctrl and 
 Alt — holding Space key in addition achieves that, besides some other logic. I use slightly different (lower) 
 keycaps on these two keys so they can be easily found.
@@ -134,7 +134,7 @@ AltGr with some keys produces frequently used symbols. Like a symbol layer wrapp
 Double-tapping left Shift activates Caps Word, double-tapping right Shift sends Caps Lock. Tapping them once 
 deactivates these.
 
-To send ```Ctrl+Space``` or ```Alt+Space```, press ```Ctrl+AltGr+Space```, ```Alt+AltGr+Space```.
+To send ```Ctrl+Space``` or ```Alt+Space```, hold AltGr or Num in addition.
 
 ## Implementation
 
