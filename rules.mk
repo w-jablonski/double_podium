@@ -1,8 +1,6 @@
-
 MCU = RP2040
 BOOTLOADER = rp2040
 
-AUTO_SHIFT_ENABLE           = no
 MIDI_ENABLE                 = no
 MOUSEKEY_ENABLE             = no
 

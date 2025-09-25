@@ -2,6 +2,7 @@
 DEFAULT_REF_LAYER(COMBO_REFERENCE)
 
 // left hand
+
 COMB(bksp_top1,   C(KC_BSPC),     LB,   TOP1       )
 COMB(bksp_top2,   DEL_WORD,       LB,   TOP2       )
 COMB(bksp_top3,   C(KC_DEL),      LB,   TOP3       )
@@ -33,6 +34,7 @@ COMB(l_stabx,     S(KC_TAB),      TOP4, MID4, MID5 )
 COMB(l_stabxx,    S(KC_TAB),      TOP3, MID3, MID2 )
 
 // right hand
+
 COMB(r_plus,      KC_PLUS,        TOP8, MID8       )
 COMB(r_mins,      KC_MINS,        MID7, MID6       )
 COMB(r_astr,      TD(ASTR),       TOP8, TOP9       )
@@ -52,6 +54,7 @@ COMB(greater,     TD(GREATER),    TOP8, MID7       )
 COMB(_gui,        TD(RGUI),       TOP7, MID7       )
 
 // mirror
+
 COMB(top1,        KC_X,           LX,   TOP1       )
 COMB(top2,        KC_Y,           LX,   TOP2       )
 COMB(top3,        KC_U,           LX,   TOP3       )
@@ -66,7 +69,3 @@ COMB(bot2,        KC_COMM,        LX,   BOT2       )
 COMB(bot3,        KC_COMM,        LX,   BOT3       )
 COMB(bot4,        KC_P,           LX,   BOT4       )
 COMB(bot5,        KC_F,           LX,   BOT5       )
-
-
-
-

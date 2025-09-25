@@ -261,7 +261,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // layers are around to ensure this function gets called
 layer_state_t layer_state_set_user(layer_state_t state) {
 
-  // LCTL or RCTL activates NAV layer; Space disactivates it
+  // LCTL or RCTL activates NAV layer; Space deactivates it
   if (IS_LAYER_ON_STATE(state, CTRL_LAYER) &&
       IS_LAYER_OFF_STATE(state, SPC_LAYER)) {
     state |= (1UL << NAV); // turn on
@@ -269,7 +269,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     state &= ~(1UL << NAV); // turn off
   }
 
-  // Space or any modifier but LALT disactivates NAV_ALT layer
+  // Space or any modifier but LALT deactivates NAV_ALT layer
   if (IS_LAYER_ON_STATE(state, LALT_LAYER) &&
       IS_LAYER_OFF_STATE(state, SPC_LAYER) &&
       IS_LAYER_OFF_STATE(state, CTRL_LAYER) &&
