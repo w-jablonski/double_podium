@@ -133,8 +133,8 @@ AltGr with some keys produces frequently used symbols. Like a symbol layer wrapp
 Double-tapping left Shift activates Caps Word, double-tapping right Shift sends Caps Lock. Tapping them once 
 deactivates these.
 
-Some thought has been given to the order of the layers. For example, numpad layer sits above the NAV layer 
-to allow sending ```Ctrl+1,2,3…```, since the Ctrl key also activates the NAV. However, the separate 
+Some thought has been given to the order of the layers. For example, momentary numpad layer sits above the NAV 
+layer to allow sending ```Ctrl+1,2,3…```, since the Ctrl key also activates the NAV. However, the toggled 
 NUMPAD_TOGGLED layer is placed lower, allowing any momentary layers to take precedence. 
 
 To send ```Ctrl+Space``` or ```Alt+Space```, hold AltGr or Num in addition.
