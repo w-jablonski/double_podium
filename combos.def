@@ -1,0 +1,72 @@
+// COMBO_REF_LAYER(_DVORAK, _QWERTY)
+DEFAULT_REF_LAYER(COMBO_REFERENCE)
+
+// left hand
+COMB(bksp_top1,   C(KC_BSPC),     LB,   TOP1       )
+COMB(bksp_top2,   DEL_WORD,       LB,   TOP2       )
+COMB(bksp_top3,   C(KC_DEL),      LB,   TOP3       )
+COMB(bksp_num,    DEL_LINE,       LB,   NU         )
+COMB(bksp_lsft,   DEL_LINE,       LB,   LS         )
+COMB(bksp_space,  DEL_LINE,       LB,   LX         )
+
+COMB(lpar,        TD(LGUI),       TOP4, MID4       )
+COMB(rpar,        TD(RPAREN),     TOP5, MID5       )
+COMB(lbra,        TD(LBRACE),     TOP3, MID4       )
+COMB(rbra,        TD(RBRACE),     TOP4, MID5       )
+COMB(nono,        KC_NO,          TOP1, MID1       )
+COMB(hash,        KC_HASH,        SKY3, TOP3       )
+COMB(at,          KC_AT,          SKY4, TOP4       )
+COMB(f11,         TD(F11),        SKY2, TOP2       )
+COMB(coln,        TD(COLN),       TOP2, MID2       )
+
+COMB(l_plus,      TD(PLUS),       TOP3, MID3       )
+COMB(l_mins,      KC_MINS,        MID5, MID4       )
+COMB(l_astr,      TD(ASTR),       TOP3, TOP4       )
+COMB(l_astrx,     TD(ASTR),       TOP2, TOP3       )
+COMB(l_slsh,      TD(SLSH),       TOP3, MID2       )
+COMB(l_unds,      KC_UNDS,        BOT5, BOT4       )
+COMB(l_dquo,      TD(DQUO),       TOP2, TOP4       )
+COMB(l_tab,       KC_TAB,         MID3, BOT4       )
+COMB(l_stab,      S(KC_TAB),      MID4, BOT5       )
+COMB(l_tabx,      KC_TAB,         TOP3, MID3, MID4 )
+COMB(l_stabx,     S(KC_TAB),      TOP4, MID4, MID5 )
+COMB(l_stabxx,    S(KC_TAB),      TOP3, MID3, MID2 )
+
+// right hand
+COMB(r_plus,      KC_PLUS,        TOP8, MID8       )
+COMB(r_mins,      KC_MINS,        MID7, MID6       )
+COMB(r_astr,      TD(ASTR),       TOP8, TOP9       )
+COMB(r_slsh,      KC_SLSH,        TOP8, MID9       )
+COMB(r_unds,      KC_UNDS,        BOT7, BOT6       )
+COMB(r_dquo,      TD(DQUO),       TOP7, TOP9       )
+COMB(r_tab,       KC_TAB,         MID8, BOT7       )
+COMB(r_stab,      S(KC_TAB),      MID7, BOT6       )
+COMB(r_tabx,      KC_TAB,         TOP8, MID8, MID9 )
+
+COMB(firmware,    TG(FIRMWARE),   SKY7, SKY8, SKY9 )
+COMB(f14,         KC_F14,         SKY7, TOP7       )
+COMB(eql,         KC_EQL,         SKY8, TOP8       )
+COMB(ques,        MY_QUES,        TOP6, MID6       )
+COMB(lesser,      KC_LT,          TOP7, MID6       )
+COMB(greater,     TD(GREATER),    TOP8, MID7       )
+COMB(_gui,        TD(RGUI),       TOP7, MID7       )
+
+// mirror
+COMB(top1,        KC_X,           LX,   TOP1       )
+COMB(top2,        KC_Y,           LX,   TOP2       )
+COMB(top3,        KC_U,           LX,   TOP3       )
+COMB(top4,        KC_G,           LX,   TOP4       )
+COMB(top5,        KC_Q,           LX,   TOP5       )
+COMB(mid1,        KC_O,           LX,   MID1       )
+COMB(mid2,        KC_I,           LX,   MID2       )
+COMB(mid3,        KC_E,           LX,   MID3       )
+COMB(mid4,        KC_A,           LX,   MID4       )
+COMB(mid5,        KC_H,           LX,   MID5       )
+COMB(bot2,        KC_COMM,        LX,   BOT2       )
+COMB(bot3,        KC_COMM,        LX,   BOT3       )
+COMB(bot4,        KC_P,           LX,   BOT4       )
+COMB(bot5,        KC_F,           LX,   BOT5       )
+
+
+
+
