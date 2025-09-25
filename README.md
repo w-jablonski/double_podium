@@ -21,10 +21,9 @@ though, as these are pressed slower and separately anyway.
 
 Putting a layer activator on the lowest pinkie allows a comfortable podium-style navigation cluster at home 
 row even in one-hand operation. And when using both hands, the two clusters can have complementary functions 
-dependent on the layer and modifiers.<br><br>
-As the number of keys available for modifiers is limited, the two pinkie-keys also serve as plain Ctrl and 
-Alt — holding Space key in addition achieves that, besides some other logic. I use slightly different (lower) 
-keycaps on these two keys so they can be easily found.
+dependent on the layer and modifiers. As the number of keys available for modifiers is limited, the two 
+pinkie-keys also serve as plain Ctrl and Alt — holding Space key in addition achieves that, besides some other 
+logic. I use slightly different (lower) keycaps on these two keys so they can be easily found.
 
 
 
