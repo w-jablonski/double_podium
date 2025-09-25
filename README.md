@@ -67,8 +67,9 @@ Activated by holding any of the two keys. These also register Ctrl to modify mou
 I am actually not using the right Ctrl a lot — it might get replaced by a Space key. 
 
 The left part features some common shortcuts placed at — or close to — where they are in the QWERTY layout. ```Ctrl+Z``` is pressed by stacking the ring finger on top of the pinkie. For this to be comfortable the two keycaps differ in height.
+Pressing and holding ```Ctrl+F``` opens the app launcher.
 
-The right part is less firmly set. It aims to offer directional scrolling in a text editor — but some editors don't seem to allow horizontal scrolling by a keyboard at all. Comfortable "Undo" and "Redo" are also provided.
+The right part is less firmly set. It aims to offer directional scrolling in a text editor — but some editors don't seem to allow horizontal scrolling via keyboard at all. Comfortable "Undo" and "Redo" are also provided.
 
 ### NAV_ALT layer
 <img width="700" alt="nav_alt" src="https://github.com/user-attachments/assets/eff55695-0dec-4501-b5e9-7fb479f5a9fd" />
@@ -87,8 +88,8 @@ Stating the obvious, the left part is for left hand-only operation and the right
 ### Function layer
 <img width="700" alt="fn" src="https://github.com/user-attachments/assets/c8bfce10-44b2-4336-bae0-61c4ee3e078d" />
 
-It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. Ctrl+AltGr+S produces Ctrl+F4).
-This as well as other conditional layers are managed in the ```layer_state_set_user()``` function that gets called anytime a layer changes.
+It is activated by double-holding the AltGr key. As the AltGr has no meaning when combined with any other modifier (except Shift), doing so also activates this layer (e.g. ```Ctrl+AltGr+S``` produces ```Ctrl+F4```).
+To avoid the logic being unmaintainable all conditional layers are managed in the ```layer_state_set_user()``` function that gets called anytime a layer changes.
 
 ### Base layer
 <img width="700" alt="non-letters" src="https://github.com/user-attachments/assets/30749dfc-4e48-4b97-a4a1-eba5a1695ecc" />
@@ -97,7 +98,9 @@ This as well as other conditional layers are managed in the ```layer_state_set_u
 <img width="700" alt="non-letters-BBB" src="https://github.com/user-attachments/assets/1a76be14-28a9-4265-910c-cef13e32b2d0" />
 -->
 
-```Ctrl+Home``` and ```Ctrl+End``` scroll the view to top/bottom in every browser and text editor I tried.<br>Character layout in use can be found [here](https://github.com/w-jablonski/files/blob/main/Polish_English_characters_layout/README.md).
+```Ctrl+Home``` and ```Ctrl+End``` scroll the view to top/bottom in every browser and text editor I tried.
+
+Character layout in use can be found [here](https://github.com/w-jablonski/files/blob/main/Polish_English_characters_layout/README.md).
 
 
 
@@ -108,7 +111,9 @@ This as well as other conditional layers are managed in the ```layer_state_set_u
 
 AltGr with some keys produces frequently used symbols. Like a symbol layer wrapped around accented characters.
 
-Double-tapping left Shift activates Caps Word, double-tapping right Shift activates Caps Lock. Tapping them once disactivates these.
+Double-tapping left Shift activates Caps Word, double-tapping right Shift sends Caps Lock. Tapping them once disactivates these.
+
+To send ```Ctrl+Space``` or ```Alt+Space```, press ```Ctrl+Num+Space```, ```Alt+Num+Space```.
 
 ## Implementation
 
