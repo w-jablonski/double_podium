@@ -4,7 +4,7 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
-* Mouse friendly, i.e. most actions, characters and symbols are available under left hand. If needed, they 
+* Mouse-friendly, i.e. most actions and characters are available under left hand. If needed, they 
 are then also provided in a more convenient way elsewhere. Additionally, navigation, common shortcuts and 
 others are also available for right hand-only operation, often by mirroring the left half.<br><br>
 In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — 
@@ -73,12 +73,12 @@ to the triggering combo.
 <img width="700" alt="nav" src="https://github.com/user-attachments/assets/0f149942-9b77-4bf9-a0ff-ec92b1470a47" />
 
 Activated by holding any of the two keys. These also register Ctrl to modify mouse events and any keys outside
-of this layer. Holding Space key in addition to these *drops* the NAV layer, making the keys act as plain 
+of this layer. Holding Space key in addition to these *drops* the NAV layer, making them act as plain 
 Ctrl. I am actually not using the right Ctrl a lot — it might get replaced by a Space key. 
 
 The left part features some common shortcuts placed at — or close to — where they are in the QWERTY layout. 
 ```Ctrl+Z``` is pressed by stacking the ring finger on top of the pinkie. For this to be comfortable the two 
-keycaps differ in height. Pressing and holding ```Ctrl+F``` opens the app launcher.
+keycaps differ in height. Pressing and holding ```Ctrl+F``` opens my app launcher.
 
 The right part is less firmly set. It aims to offer directional scrolling in a text editor — but some editors 
 don't seem to allow horizontal scrolling via keyboard at all. Comfortable "Undo" and "Redo" are also provided.
