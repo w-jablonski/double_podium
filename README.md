@@ -62,6 +62,10 @@ When held, some combos produce modifiers. These also activate their mini-layers 
 to the triggering combo. 
 
 <img width="430" alt="combo_mods" src="https://github.com/user-attachments/assets/a86ae41d-b73e-4b48-b82c-961f0342b776" />
+<br><br>
+
+"Mirror" combos are also used: a character on the left half plus the Space key send a character on 
+the right half.
 
 
 
@@ -76,7 +80,7 @@ Activated by holding any of the two keys. These also register Ctrl to modify mou
 of this layer. Holding Space key in addition to these *drops* the NAV layer, making them act as plain 
 Ctrl. I am actually not using the right Ctrl a lot — it might get replaced by a Space key. 
 
-The left part features some common shortcuts placed at — or close to — where they are in the QWERTY layout. 
+The left part features some common shortcuts placed (close to) where they are in the QWERTY layout. 
 ```Ctrl+Z``` is pressed by stacking the ring finger on top of the pinkie. For this to be comfortable the two 
 keycaps differ in height. Pressing and holding ```Ctrl+F``` opens my app launcher.
 
