@@ -6,21 +6,18 @@ Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
 
 * Mouse-friendly, i.e. most actions and characters are available under left hand. If needed, they 
 are then also provided in a more convenient way elsewhere. Additionally, navigation, common shortcuts and 
-others are also available for right hand-only operation, often by mirroring the left half.<br><br>
-In general, using both hands to balance the effort is necessary and recommended for any heavy keyboard user — 
-but there are times when mouse must be used and switching the hand between the two can be a nuisance. This 
-design aims to provide for both scenarios in a viable way.
+others are also available for right hand-only operation, often by mirroring the left half.
 
 * No Tap-Hold on regular character keys as I believe it's not without issues. Tap-Hold is used on combos, 
 though, as these are pressed slower and separately anyway.
 
-* AltGr as a first-class citizen to type accented characters in Polish.
+* AltGr as a first-class citizen.
 
 ## Concept
 <img width="700" alt="podiums" src="https://github.com/user-attachments/assets/7ceb44f3-df00-4d44-bf63-ede2db1af478" />
 
 Putting a layer activator on the lowest pinkie allows a comfortable podium-style navigation cluster at home 
-row even in one-hand operation. And when using both hands, the two clusters can have complementary functions 
+row even in one-hand operation. When using both hands, the two clusters can have complementary functions 
 dependent on the layer and modifiers. As the number of keys available for modifiers is limited, the two 
 pinkie-keys also serve as plain Ctrl and Alt — holding Space key in addition achieves that, besides some other 
 logic. I use slightly different (lower) keycaps on these two keys so they can be easily found.
