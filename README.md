@@ -1,6 +1,7 @@
-# double_podium
+# double_podium (v1)
+# (THIS IS THE OLD VERSION)
 
-Mouse-friendly symmetrical ortholinear keyboard layout implemented in QMK
+Mouse-friendly ortholinear keyboard layout implemented in QMK
 
 ## Goals
 
